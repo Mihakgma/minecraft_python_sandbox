@@ -55,13 +55,10 @@ class Pyramid(Figure):
                 z + current_z_tiles,
                 block_id,
             )
-
             # Adjust dimensions for the next layer
             # Preventing building sand clocks (duplicated pyramid)
-            if x_size <= 0 or z_size <= 0:
+            if x_size <= 1 or z_size <= 1:
                 break
-        print(f"x step = {x_step}")
-        print(f"z step = {z_step}")
 
     def draw_filled_sand_clocks(self, x_tiles, y_tiles, z_tiles):
         self.check_fig_dims(x_tiles, y_tiles, z_tiles)
@@ -93,9 +90,6 @@ class Pyramid(Figure):
                 z + current_z_tiles,
                 block_id,
             )
-
-        print(f"x step = {x_step}")
-        print(f"z step = {z_step}")
 
 
 if __name__ == "__main__":

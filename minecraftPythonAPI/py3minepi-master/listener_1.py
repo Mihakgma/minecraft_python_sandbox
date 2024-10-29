@@ -4,8 +4,9 @@ from time import sleep as time_sleep
 import threading
 import sys
 
+from datetime_current import get_current_time
 from cube_fig import Cube
-from pyramid import Pyramid
+from pyramid_fig import Pyramid
 
 
 class ChatListener(threading.Thread):
@@ -32,10 +33,15 @@ class ChatListener(threading.Thread):
                 print(e)
 
     def process_chat(self, message):
-        # players_ids = self.mc.getPlayerEntityIds()
         message = message.lower()
         print(message)
-        for figure_class in self.figure_classes:
+        class_not_found = True
+        i = 0
+        while class_not_found:
+            figure_class = self.figure_classes[i]
+            i += 1
+            if len(self.figure_classes) == i:
+                class_not_found = False
             obj_class_name = figure_class.__name__.lower()
             if obj_class_name in message:
                 print(f"class <{obj_class_name}> name is in message: {message}")
@@ -47,6 +53,7 @@ class ChatListener(threading.Thread):
                 else:
                     print("trying to build a figure")
                     self.build_figure(figure_class, message)
+                    class_not_found = False
             else:
                 print(f"class <{obj_class_name}> name is NOT in message: {message}")
 
@@ -67,6 +74,7 @@ class ChatListener(threading.Thread):
 
 
 if __name__ == "__main__":
+    start_TS = get_current_time()
     # clear all previous events
     m_craft = minecraft.Minecraft.create()
     # cmde = minecraft.CmdEvents(connection=mc.getConnection())
@@ -76,9 +84,17 @@ if __name__ == "__main__":
 
     # starting listener
     figures_classes = [Cube, Pyramid]
-    listener = ChatListener(m_craft, figures_classes, sleep_time=3.5)
+    listener = ChatListener(m_craft, figures_classes, sleep_time=1.5)
     listener.start()
 
-    # Основной цикл, пока слушатель работает
-    # while True:
-    #     time_sleep(1)
+    # main cycle while listener working
+    minutes_elapsed = 0
+    try:
+        while True:
+            time_sleep(60)
+            minutes_elapsed += 1
+            print(f"Tik-tok, <{minutes_elapsed}> minutes elapsed...")
+    except KeyboardInterrupt:
+        end_TS = get_current_time()
+        print(f"started at: <{start_TS}>")
+        print(f"ended at: <{end_TS}>")
