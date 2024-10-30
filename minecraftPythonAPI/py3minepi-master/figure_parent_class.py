@@ -75,9 +75,9 @@ class Figure:
         print(f"tiles on y axis = <{y_tiles}>")
         print(f"tiles on z axis = <{z_tiles}>")
         craft.setBlocks(x, y, z,
-                        x + x_tiles,
-                        y + y_tiles,
-                        z + z_tiles,
+                        x + x_tiles - 1,
+                        y + y_tiles - 1,
+                        z + z_tiles - 1,
                         block_id)
 
     def check_fig_dims(self, *args):

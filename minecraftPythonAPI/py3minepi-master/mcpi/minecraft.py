@@ -328,7 +328,7 @@ class Minecraft:
 
     def setBlocks(self, *args):
         """Set a cuboid of blocks (x0,y0,z0,x1,y1,z1,id,[data])"""
-        print(*args)
+        # print(*args)
         self.conn.send(b"world.setBlocks", intFloor(args))
 
     def setSign(self, *args):

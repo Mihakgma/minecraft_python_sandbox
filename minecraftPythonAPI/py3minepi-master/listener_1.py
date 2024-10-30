@@ -6,7 +6,9 @@ import sys
 
 from datetime_current import get_current_time
 from cube_fig import Cube
+from double_pyramid_fig import DoublePyramid
 from pyramid_fig import Pyramid
+from rectangle_fig import Rectangle
 
 
 class ChatListener(threading.Thread):
@@ -20,9 +22,9 @@ class ChatListener(threading.Thread):
         self.figure_classes = figure_classes
 
     def run(self):
-        players_ids = self.mc.getPlayerEntityIds()
+        # players_ids = self.mc.getPlayerEntityIds()
         while True:
-            time_sleep(self.sleep_time)  # Проверка чата каждую ...
+            time_sleep(self.sleep_time)  # check chat every ... seconds
             try:
                 chat = self.mc.events.pollChatPosts()
                 if chat:
@@ -43,7 +45,8 @@ class ChatListener(threading.Thread):
             if len(self.figure_classes) == i:
                 class_not_found = False
             obj_class_name = figure_class.__name__.lower()
-            if obj_class_name in message:
+            fig_name = message.split(self.MAIN_DELIMITER)[0].lower().strip()
+            if obj_class_name == fig_name:
                 print(f"class <{obj_class_name}> name is in message: {message}")
                 if self.MAIN_DELIMITER not in message or self.SECONDARY_DELIMITER not in message:
                     error_message = (f"for <{obj_class_name}> message doesn't contain "
@@ -83,18 +86,24 @@ if __name__ == "__main__":
     sys.setrecursionlimit(1000)
 
     # starting listener
-    figures_classes = [Cube, Pyramid]
+    figures_classes = [Cube,
+                       Pyramid,
+                       Rectangle,
+                       DoublePyramid]
     listener = ChatListener(m_craft, figures_classes, sleep_time=1.5)
     listener.start()
 
     # main cycle while listener working
     minutes_elapsed = 0
+    minutes_to_finish = 60
     try:
-        while True:
+        while minutes_elapsed < minutes_to_finish:
             time_sleep(60)
             minutes_elapsed += 1
             print(f"Tik-tok, <{minutes_elapsed}> minutes elapsed...")
+            print(f"<{minutes_to_finish - minutes_elapsed}> minutes to finish...")
     except KeyboardInterrupt:
-        end_TS = get_current_time()
-        print(f"started at: <{start_TS}>")
-        print(f"ended at: <{end_TS}>")
+        pass
+    end_TS = get_current_time()
+    print(f"started at: <{start_TS}>")
+    print(f"ended at: <{end_TS}>")
