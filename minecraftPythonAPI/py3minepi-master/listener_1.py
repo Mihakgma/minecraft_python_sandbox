@@ -9,6 +9,7 @@ from cube_fig import Cube
 from double_pyramid_fig import DoublePyramid
 from pyramid_fig import Pyramid
 from rectangle_fig import Rectangle
+from tower_chatgpt_1 import SpiraledStairwayTower
 
 
 class ChatListener(threading.Thread):
@@ -69,11 +70,14 @@ class ChatListener(threading.Thread):
         x_t, y_t, z_t, block_id = message[vals_start_position:].split(self.SECONDARY_DELIMITER)
         x_t = x_t[1:]
         print(x_t, y_t, z_t, block_id)
-        figure = figure_class(0, 0, 0, int(block_id), True, self.mc)
         try:
-            figure.draw_filled_fig(int(x_t), int(y_t), int(z_t))
-        except ValueError as e:
-            print(f"Error trying to build figure: {e}")
+            figure = figure_class(0, 0, 0, int(block_id), True, self.mc)
+            try:
+                figure.draw_filled_fig(int(x_t), int(y_t), int(z_t))
+            except ValueError as e:
+                print(f"Error trying to build figure: {e}")
+        except TypeError as e:
+            print(f"Error trying to init figures class new object: {e}")
 
 
 if __name__ == "__main__":
@@ -89,7 +93,8 @@ if __name__ == "__main__":
     figures_classes = [Cube,
                        Pyramid,
                        Rectangle,
-                       DoublePyramid]
+                       DoublePyramid,
+                       SpiraledStairwayTower]
     listener = ChatListener(m_craft, figures_classes, sleep_time=1.5)
     listener.start()
 

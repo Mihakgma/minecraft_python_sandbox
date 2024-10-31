@@ -102,7 +102,7 @@ if __name__ == "__main__":
                       False,
                       mc)
     time_sleep(3.5)
-    pyramid.draw_filled_fig(12, 12, 12)  # OK
+    pyramid.draw_filled_fig(120, 120, 120)  # OK
     time_sleep(3.5)
     # pyramid.draw_filled_sand_clocks(30, 30, 50)
     

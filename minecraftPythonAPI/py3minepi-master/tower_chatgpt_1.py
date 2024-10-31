@@ -1,7 +1,7 @@
 import mcpi.minecraft as minecraft
 import math
 
-class SpiraleStairwayTower():
+class SpiraledStairwayTower():
     def __init__(self, x, y, z, block_id=35, block_data=3, radius=5, height=20, steps_per_turn=5):
         """
         Инициализирует башню со спиральной лестницей.
@@ -111,5 +111,5 @@ if __name__ == "__main__":
     mc = minecraft.Minecraft.create()
     cor = mc.player.getTilePos()
     # Пример использования:
-    tower = SpiraleStairwayTower(x=cor.x, y=cor.y, z=cor.z)
-    tower.draw_filled_fig(10, 20, 10) # Строит башню 10х20х10 блоков
+    tower = SpiraledStairwayTower(x=cor.x, y=cor.y, z=cor.z)
+    tower.draw_filled_fig(100, 500, 100) # Строит башню ...х...х... блоков
