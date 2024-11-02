@@ -7,10 +7,6 @@ from time import sleep as time_sleep
 
 class Pyramid(Figure):
 
-    def __new__(cls, *args, **kwargs):
-        super(Pyramid, cls).__new__(cls)
-        return object.__new__(cls)
-
     def check_fig_dims(self, *args):
         super(Pyramid, self).check_fig_dims(*args)
         if len(args) != 3:

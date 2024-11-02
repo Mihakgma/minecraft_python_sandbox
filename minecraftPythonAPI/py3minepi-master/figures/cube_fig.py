@@ -6,10 +6,6 @@ from random import randint
 
 class Cube(Figure):
 
-    def __new__(cls, *args, **kwargs):
-        super(Cube, cls).__new__(cls)
-        return object.__new__(cls)
-
     def check_fig_dims(self, *args):
         if any([type(arg) is not int or arg < 0 for arg in args]):
             print("all sides of figure must be natural integers!")

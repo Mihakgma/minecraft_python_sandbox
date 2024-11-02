@@ -5,9 +5,6 @@ from figures.pyramid_fig import Pyramid
 
 
 class DoublePyramid(Pyramid):
-    def __new__(cls, *args, **kwargs):
-        super(Pyramid, cls).__new__(cls)
-        return object.__new__(cls)
 
     def draw_filled_fig(self, x_tiles, y_tiles, z_tiles):
         super().draw_filled_sand_clocks(x_tiles, y_tiles, z_tiles)

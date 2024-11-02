@@ -1,7 +1,5 @@
 import mcpi.minecraft as minecraft
 from entities.minecraft_world import MinecraftWorld
-
-
 # from entities.minecraft_world import MinecraftWorld
 
 
@@ -64,8 +62,7 @@ class Figure:
         return self.__minecraft_world_entity
 
     def __set_coords_from_position(self):
-        position = self.get_minecraft_world_entity().get_tile_pos()
-        print(position.x, position.y, position.z)
+        position = self.__minecraft_world_entity.get_tile_pos()
         self.set_x(position.x)
         self.set_y(position.y)
         self.set_z(position.z)

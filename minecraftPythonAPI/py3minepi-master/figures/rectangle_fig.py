@@ -9,10 +9,6 @@ import mcpi.minecraft as minecraft
 
 class Rectangle(Figure):
 
-    def __new__(cls, *args, **kwargs):
-        super(Rectangle, cls).__new__(cls)
-        return object.__new__(cls)
-
     def check_fig_dims(self, *args):
         if any([type(arg) is not int or arg < 0 for arg in args]):
             print("all sides of figure must be natural integers!")
@@ -40,5 +36,7 @@ if __name__ == "__main__":
     mc1 = MinecraftWorld()
     mc1.restore_start_state()
     print(mc_prev.get_world() == mc1.get_world())
+    time.sleep(5)
+    mc_prev.restore_start_state()
     # pyramid.draw_filled_fig(0.5, 2, 3)  # ValueError
     # pyramid.draw_filled_fig(5, 2, 3)  # ValueError
