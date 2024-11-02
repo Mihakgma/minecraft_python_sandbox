@@ -3,6 +3,7 @@ class Singleton:
 
     def __new__(cls, *args, **kwargs):
         if cls.__INSTANCE is None:
+            print("new Singleton instance has been created")
             cls.__INSTANCE = super().__new__(cls)
         return cls.__INSTANCE
 
