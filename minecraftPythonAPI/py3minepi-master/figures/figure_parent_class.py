@@ -1,4 +1,7 @@
 import mcpi.minecraft as minecraft
+from entities.minecraft_world import MinecraftWorld
+
+
 # from entities.minecraft_world import MinecraftWorld
 
 
@@ -19,14 +22,13 @@ class Figure:
                  y: int,
                  z: int,
                  block_id: int,
-                 position: bool,
-                 minecraft_world_entity):
+                 position: bool):
         self.__x = x
         self.__y = y
         self.__z = z
         self.__block_id = block_id
         self.__position = position
-        self.__minecraft_world_entity = minecraft_world_entity
+        self.__minecraft_world_entity = MinecraftWorld()
         if position:
             self.__set_coords_from_position()
 
@@ -62,14 +64,15 @@ class Figure:
         return self.__minecraft_world_entity
 
     def __set_coords_from_position(self):
-        position = self.get_minecraft_world_entity().player.getTilePos()
+        position = self.get_minecraft_world_entity().get_tile_pos()
+        print(position.x, position.y, position.z)
         self.set_x(position.x)
         self.set_y(position.y)
         self.set_z(position.z)
 
     def draw_filled_fig(self, x_tiles, y_tiles, z_tiles):
         self.check_fig_dims(x_tiles, y_tiles, z_tiles)
-        craft = self.get_minecraft_world_entity()
+        craft = self.get_minecraft_world_entity().get_world()
         block_id = self.get_block_id()
         x, y, z = self.get_x(), self.get_y(), self.get_z()
         print(f"\nGonna draw a FILLED <{self.__class__.__name__}> with:")
@@ -101,5 +104,5 @@ class Figure:
 
 if __name__ == "__main__":
     mc = minecraft.Minecraft.create()
-    figure = Figure(1, 2, 3, 9, False, mc)
+    figure = Figure(1, 2, 3, 9, False)
     print(figure)

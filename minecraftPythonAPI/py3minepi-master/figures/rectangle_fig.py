@@ -32,14 +32,13 @@ if __name__ == "__main__":
                           pos.y,
                           pos.z + 1,
                           17,
-                          False,
-                          mc)
+                          False)
     rectangle.draw_filled_fig(1, 2, 3)  # OK
     mc_prev = rectangle.get_minecraft_world_entity()
     time.sleep(5)
-    mine = minecraft.Minecraft.create()
-    mc1 = MinecraftWorld(mine)
+    # mine = minecraft.Minecraft.create()
+    mc1 = MinecraftWorld()
     mc1.restore_start_state()
-    print(mc_prev == mc1.get_world())
+    print(mc_prev.get_world() == mc1.get_world())
     # pyramid.draw_filled_fig(0.5, 2, 3)  # ValueError
     # pyramid.draw_filled_fig(5, 2, 3)  # ValueError

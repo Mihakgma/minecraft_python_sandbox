@@ -19,7 +19,7 @@ class Pyramid(Figure):
 
     def draw_filled_fig(self, x_tiles, y_tiles, z_tiles):
         self.check_fig_dims(x_tiles, y_tiles, z_tiles)
-        craft = self.get_minecraft_world_entity()
+        craft = self.get_minecraft_world_entity().get_world()
         block_id = self.get_block_id()
         x, y, z = self.get_x(), self.get_y(), self.get_z()
         # print(f"\nGonna draw a FILLED <{self.class.name}> with:")
@@ -60,7 +60,7 @@ class Pyramid(Figure):
 
     def draw_filled_sand_clocks(self, x_tiles, y_tiles, z_tiles):
         self.check_fig_dims(x_tiles, y_tiles, z_tiles)
-        craft = self.get_minecraft_world_entity()
+        craft = self.get_minecraft_world_entity().get_world()
         block_id = self.get_block_id()
         x, y, z = self.get_x(), self.get_y(), self.get_z()
         # print(f"\nGonna draw a FILLED <{self.class.name}> with:")
@@ -97,10 +97,9 @@ if __name__ == "__main__":
                       pos.y,
                       pos.z + 1,
                       19,
-                      False,
-                      mc)
+                      True)
     time_sleep(3.5)
-    pyramid.draw_filled_fig(120, 120, 120)  # OK
+    # pyramid.draw_filled_fig(12, 12, 12)  # OK
     time_sleep(3.5)
     # pyramid.draw_filled_sand_clocks(30, 30, 50)
     

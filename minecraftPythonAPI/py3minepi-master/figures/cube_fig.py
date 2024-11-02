@@ -46,8 +46,7 @@ if __name__ == "__main__":
                     pos.y,
                     pos.z+1,
                     randint(1, 111),
-                    False,
-                    mc)
+                    False)
         print(cube)
         try:
             cube.draw_filled_fig(*cube_dims)

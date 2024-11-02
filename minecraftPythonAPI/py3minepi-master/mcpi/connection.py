@@ -11,7 +11,7 @@ class RequestError(Exception):
     pass
 
 
-class Connection(Singleton):
+class Connection:
     """Connection to a Minecraft Pi game"""
     RequestFailed = "Fail"
 

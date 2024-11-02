@@ -1,329 +1,563 @@
-[16:20:06] [Server thread/INFO]: Loading properties
-[16:20:06] [Server thread/INFO]: Default game type: CREATIVE
-[16:20:06] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-3d850ec-809c399 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
-[16:20:06] [Server thread/INFO]: Debug logging is disabled
-[16:20:06] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:20:06] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:20:06] [Server thread/INFO]: Generating keypair
-[16:20:06] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:20:06] [Server thread/INFO]: Using default channel type
-[16:20:06] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[16:20:06] [Server thread/INFO]: [SetSpawn] Loading SetSpawn v2.1
-[16:20:06] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.7
-[16:20:06] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[16:20:06] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[16:20:06] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[16:20:06] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[16:20:06] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[16:20:06] [Server thread/INFO]: Preparing level "world"
-[16:20:06] [Server thread/INFO]: -------- World Settings For [world] --------
-[16:20:06] [Server thread/INFO]: Mob Spawn Range: 4
-[16:20:06] [Server thread/INFO]: View Distance: 10
-[16:20:06] [Server thread/INFO]: Experience Merge Radius: 3.0
-[16:20:06] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[16:20:06] [Server thread/INFO]: Item Despawn Rate: 6000
-[16:20:06] [Server thread/INFO]: Item Merge Radius: 2.5
-[16:20:06] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[16:20:06] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[16:20:06] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[16:20:06] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[16:20:06] [Server thread/INFO]: Random Lighting Updates: false
-[16:20:06] [Server thread/INFO]: Max TNT Explosions: 100
-[16:20:06] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[16:20:06] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[16:20:06] [Server thread/INFO]: Structure Info Saving: true
-[16:20:06] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
-[16:20:06] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Cane Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Melon Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Vine Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[16:20:06] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[16:20:07] [Server thread/INFO]: -------- World Settings For [world_nether] --------
-[16:20:07] [Server thread/INFO]: Mob Spawn Range: 4
-[16:20:07] [Server thread/INFO]: View Distance: 10
-[16:20:07] [Server thread/INFO]: Experience Merge Radius: 3.0
-[16:20:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[16:20:07] [Server thread/INFO]: Item Despawn Rate: 6000
-[16:20:07] [Server thread/INFO]: Item Merge Radius: 2.5
-[16:20:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[16:20:07] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[16:20:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[16:20:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[16:20:07] [Server thread/INFO]: Random Lighting Updates: false
-[16:20:07] [Server thread/INFO]: Max TNT Explosions: 100
-[16:20:07] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[16:20:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[16:20:07] [Server thread/INFO]: Structure Info Saving: true
-[16:20:07] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
-[16:20:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Cane Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Melon Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Vine Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[16:20:07] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
-[16:20:07] [Server thread/INFO]: Mob Spawn Range: 4
-[16:20:07] [Server thread/INFO]: View Distance: 10
-[16:20:07] [Server thread/INFO]: Experience Merge Radius: 3.0
-[16:20:07] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
-[16:20:07] [Server thread/INFO]: Item Despawn Rate: 6000
-[16:20:07] [Server thread/INFO]: Item Merge Radius: 2.5
-[16:20:07] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
-[16:20:07] [Server thread/INFO]: Arrow Despawn Rate: 1200
-[16:20:07] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
-[16:20:07] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
-[16:20:07] [Server thread/INFO]: Random Lighting Updates: false
-[16:20:07] [Server thread/INFO]: Max TNT Explosions: 100
-[16:20:07] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
-[16:20:07] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
-[16:20:07] [Server thread/INFO]: Structure Info Saving: true
-[16:20:07] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
-[16:20:07] [Server thread/INFO]: Cactus Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Cane Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Melon Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Mushroom Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Sapling Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Wheat Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: NetherWart Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Vine Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Cocoa Growth Modifier: 100%
-[16:20:07] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
-[16:20:07] [Server thread/INFO]: Preparing start region for level 0 (Seed: -936796265574772272)
-[16:20:08] [Server thread/INFO]: Preparing spawn area: 62%
-[16:20:08] [Server thread/INFO]: Preparing start region for level 1 (Seed: -936796265574772272)
-[16:20:09] [Server thread/INFO]: Preparing start region for level 2 (Seed: -936796265574772272)
-[16:20:09] [Server thread/INFO]: [SetSpawn] Enabling SetSpawn v2.1
-[16:20:09] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.7
-[16:20:09] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
-[16:20:09] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:20:09] [Server thread/INFO]: Done (2,454s)! For help, type "help" or "?"
-[16:20:20] [User Authenticator #1/INFO]: UUID of player Murzik is dbac2af4-434e-3444-9e3f-02299e764ca2
-[16:20:20] [Server thread/INFO]: Murzik[/127.0.0.1:52429] logged in with entity id 286 at ([world]721.8949825501574, 107.0, -611.8382878373537)
-[16:22:53] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
-[16:22:53] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52448.
-[16:22:53] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
-[16:22:53] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:24:25] [Server thread/INFO]: Set the time to 1000
-[16:24:41] [Async Chat Thread - #0/INFO]: <Murzik> cube: 3,2,1,17[m
-[16:25:23] [Async Chat Thread - #0/INFO]: <Murzik> cube: 3,3,3,17[m
-[16:28:27] [Thread-7/WARN]: java.net.SocketException: Connection reset
-[16:28:27] [Thread-7/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:28:27] [Thread-7/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:28:27] [Thread-7/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:28:27] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52448.
-[16:29:50] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52481.
-[16:29:50] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
-[16:29:50] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
-[16:29:50] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:29:50] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52481.
-[16:31:02] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52493.
-[16:31:02] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
-[16:31:02] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
-[16:31:03] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:31:07] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:31:08] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52493.
-[16:33:00] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52506.
-[16:33:00] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
-[16:33:00] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
-[16:33:00] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:33:05] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52511.
-[16:33:05] [Thread-16/INFO]: [RaspberryJuice] Starting output thread!
-[16:33:05] [Thread-15/INFO]: [RaspberryJuice] Starting input thread
-[16:33:05] [Thread-13/WARN]: java.net.SocketException: Connection reset
-[16:33:05] [Thread-13/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:33:05] [Thread-13/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:33:05] [Thread-13/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:33:05] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:33:05] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:33:05] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52506.
-[16:33:05] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52511.
-[16:34:30] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52521.
-[16:34:30] [Thread-18/INFO]: [RaspberryJuice] Starting output thread!
-[16:34:30] [Thread-17/INFO]: [RaspberryJuice] Starting input thread
-[16:34:30] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:34:35] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52526.
-[16:34:35] [Thread-19/INFO]: [RaspberryJuice] Starting input thread
-[16:34:35] [Thread-20/INFO]: [RaspberryJuice] Starting output thread!
-[16:34:35] [Thread-17/WARN]: java.net.SocketException: Connection reset
-[16:34:35] [Thread-17/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:34:35] [Thread-17/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:34:35] [Thread-17/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:34:35] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:34:35] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:34:35] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52521.
-[16:34:35] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52526.
-[16:37:24] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52536.
-[16:37:24] [Thread-21/INFO]: [RaspberryJuice] Starting input thread
-[16:37:24] [Thread-22/INFO]: [RaspberryJuice] Starting output thread!
-[16:37:24] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:37:29] [Thread-21/WARN]: java.net.SocketException: Connection reset
-[16:37:29] [Thread-21/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:37:29] [Thread-21/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:37:29] [Thread-21/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:37:29] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52541.
-[16:37:29] [Thread-24/INFO]: [RaspberryJuice] Starting output thread!
-[16:37:29] [Thread-23/INFO]: [RaspberryJuice] Starting input thread
-[16:37:29] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:37:29] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:37:29] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52536.
-[16:37:29] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52541.
-[16:38:23] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52548.
-[16:38:23] [Thread-26/INFO]: [RaspberryJuice] Starting output thread!
-[16:38:23] [Thread-25/INFO]: [RaspberryJuice] Starting input thread
-[16:38:23] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:38:28] [Thread-25/WARN]: java.net.SocketException: Connection reset
-[16:38:28] [Thread-25/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:38:28] [Thread-25/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:38:28] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52553.
-[16:38:28] [Thread-25/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:38:28] [Thread-27/INFO]: [RaspberryJuice] Starting input thread
-[16:38:28] [Thread-28/INFO]: [RaspberryJuice] Starting output thread!
-[16:38:28] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:38:28] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:38:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52548.
-[16:38:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52553.
-[16:42:42] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52581.
-[16:42:42] [Thread-29/INFO]: [RaspberryJuice] Starting input thread
-[16:42:42] [Thread-30/INFO]: [RaspberryJuice] Starting output thread!
-[16:42:42] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:42:59] [Async Chat Thread - #1/INFO]: <Murzik> cube: 3,3,3,17[m
-[16:44:59] [Thread-29/WARN]: java.net.SocketException: Connection reset
-[16:44:59] [Thread-29/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:44:59] [Thread-29/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:44:59] [Thread-29/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:44:59] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52581.
-[16:45:00] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52597.
-[16:45:00] [Thread-31/INFO]: [RaspberryJuice] Starting input thread
-[16:45:00] [Thread-32/INFO]: [RaspberryJuice] Starting output thread!
-[16:45:00] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:45:05] [Async Chat Thread - #2/INFO]: <Murzik> cube: 3,3,3,17[m
-[16:45:41] [Async Chat Thread - #2/INFO]: <Murzik> _restore_all[m
-[16:45:41] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:48:19] [Async Chat Thread - #3/INFO]: <Murzik> _restore_all[m
-[16:48:20] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:48:30] [Thread-31/WARN]: java.net.SocketException: Connection reset
-[16:48:30] [Thread-31/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:48:30] [Thread-31/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:48:30] [Thread-31/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:48:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52597.
-[16:48:36] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52644.
-[16:48:36] [Thread-34/INFO]: [RaspberryJuice] Starting output thread!
-[16:48:36] [Thread-33/INFO]: [RaspberryJuice] Starting input thread
-[16:48:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52644.
-[16:49:27] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52647.
-[16:49:27] [Thread-36/INFO]: [RaspberryJuice] Starting output thread!
-[16:49:27] [Thread-35/INFO]: [RaspberryJuice] Starting input thread
-[16:49:32] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52648.
-[16:49:32] [Thread-37/INFO]: [RaspberryJuice] Starting input thread
-[16:49:32] [Thread-38/INFO]: [RaspberryJuice] Starting output thread!
-[16:49:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52647.
-[16:49:32] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:49:32] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:49:32] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52648.
-[16:50:12] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52661.
-[16:50:12] [Thread-39/INFO]: [RaspberryJuice] Starting input thread
-[16:50:12] [Thread-40/INFO]: [RaspberryJuice] Starting output thread!
-[16:50:17] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52667.
-[16:50:17] [Thread-41/INFO]: [RaspberryJuice] Starting input thread
-[16:50:17] [Thread-42/INFO]: [RaspberryJuice] Starting output thread!
-[16:50:17] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:50:17] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:50:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52661.
-[16:50:17] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52667.
-[16:50:29] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52672.
-[16:50:29] [Thread-44/INFO]: [RaspberryJuice] Starting output thread!
-[16:50:29] [Thread-43/INFO]: [RaspberryJuice] Starting input thread
-[16:50:34] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52673.
-[16:50:34] [Thread-45/INFO]: [RaspberryJuice] Starting input thread
-[16:50:34] [Thread-46/INFO]: [RaspberryJuice] Starting output thread!
-[16:50:34] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:50:34] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
-[16:50:34] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52672.
-[16:50:34] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52673.
-[16:51:34] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:52681.
-[16:51:34] [Thread-47/INFO]: [RaspberryJuice] Starting input thread
-[16:51:34] [Thread-48/INFO]: [RaspberryJuice] Starting output thread!
-[16:51:34] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
-[16:52:29] [Thread-47/WARN]: java.net.SocketException: Connection reset
-[16:52:29] [Thread-47/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
-[16:52:29] [Thread-47/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
-[16:52:29] [Thread-47/WARN]: 	at java.lang.Thread.run(Unknown Source)
-[16:52:29] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:52681.
-[16:52:43] [Server thread/INFO]: Murzik lost connection: Disconnected
-[16:52:43] [Server thread/INFO]: Murzik left the game
+[09:46:01] [Server thread/INFO]: Loading properties
+[09:46:01] [Server thread/INFO]: Default game type: CREATIVE
+[09:46:01] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-3d850ec-809c399 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[09:46:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:46:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:46:01] [Server thread/INFO]: Debug logging is disabled
+[09:46:01] [Server thread/INFO]: Generating keypair
+[09:46:02] [Server thread/INFO]: Starting Minecraft server on *:25565
+[09:46:02] [Server thread/INFO]: Using default channel type
+[09:46:02] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[09:46:02] [Server thread/INFO]: [SetSpawn] Loading SetSpawn v2.1
+[09:46:02] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.7
+[09:46:02] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[09:46:02] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[09:46:02] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[09:46:02] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[09:46:02] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[09:46:02] [Server thread/INFO]: Preparing level "world"
+[09:46:02] [Server thread/INFO]: -------- World Settings For [world] --------
+[09:46:02] [Server thread/INFO]: Experience Merge Radius: 3.0
+[09:46:02] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[09:46:02] [Server thread/INFO]: View Distance: 10
+[09:46:02] [Server thread/INFO]: Item Despawn Rate: 6000
+[09:46:02] [Server thread/INFO]: Item Merge Radius: 2.5
+[09:46:02] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[09:46:02] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[09:46:02] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[09:46:02] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[09:46:02] [Server thread/INFO]: Max TNT Explosions: 100
+[09:46:02] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[09:46:02] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[09:46:02] [Server thread/INFO]: Structure Info Saving: true
+[09:46:02] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[09:46:02] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[09:46:02] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Cane Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Melon Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Vine Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[09:46:02] [Server thread/INFO]: Mob Spawn Range: 4
+[09:46:02] [Server thread/INFO]: Random Lighting Updates: false
+[09:46:03] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[09:46:03] [Server thread/INFO]: Experience Merge Radius: 3.0
+[09:46:03] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[09:46:03] [Server thread/INFO]: View Distance: 10
+[09:46:03] [Server thread/INFO]: Item Despawn Rate: 6000
+[09:46:03] [Server thread/INFO]: Item Merge Radius: 2.5
+[09:46:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[09:46:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[09:46:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[09:46:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[09:46:03] [Server thread/INFO]: Max TNT Explosions: 100
+[09:46:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[09:46:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[09:46:03] [Server thread/INFO]: Structure Info Saving: true
+[09:46:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[09:46:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[09:46:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Cane Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Melon Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Vine Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Mob Spawn Range: 4
+[09:46:03] [Server thread/INFO]: Random Lighting Updates: false
+[09:46:03] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[09:46:03] [Server thread/INFO]: Experience Merge Radius: 3.0
+[09:46:03] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[09:46:03] [Server thread/INFO]: View Distance: 10
+[09:46:03] [Server thread/INFO]: Item Despawn Rate: 6000
+[09:46:03] [Server thread/INFO]: Item Merge Radius: 2.5
+[09:46:03] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[09:46:03] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[09:46:03] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[09:46:03] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617 Monument: 10387313 Slime: 987234911
+[09:46:03] [Server thread/INFO]: Max TNT Explosions: 100
+[09:46:03] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[09:46:03] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[09:46:03] [Server thread/INFO]: Structure Info Saving: true
+[09:46:03] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[09:46:03] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[09:46:03] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Cane Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Melon Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Vine Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[09:46:03] [Server thread/INFO]: Mob Spawn Range: 4
+[09:46:03] [Server thread/INFO]: Random Lighting Updates: false
+[09:46:03] [Server thread/INFO]: Preparing start region for level 0 (Seed: -936796265574772272)
+[09:46:04] [Server thread/INFO]: Preparing spawn area: 27%
+[09:46:05] [Server thread/INFO]: Preparing start region for level 1 (Seed: -936796265574772272)
+[09:46:05] [Server thread/INFO]: Preparing start region for level 2 (Seed: -936796265574772272)
+[09:46:06] [Server thread/INFO]: [SetSpawn] Enabling SetSpawn v2.1
+[09:46:06] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.7
+[09:46:06] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[09:46:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:46:06] [Server thread/INFO]: Done (3,293s)! For help, type "help" or "?"
+[09:46:22] [User Authenticator #1/INFO]: UUID of player Murzik is dbac2af4-434e-3444-9e3f-02299e764ca2
+[09:46:23] [Server thread/INFO]: Murzik[/127.0.0.1:50008] logged in with entity id 276 at ([world]717.3611818765015, 80.0, -558.3694530527025)
+[09:47:09] [Thread-7/INFO]: [RaspberryJuice] Starting input thread
+[09:47:09] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50018.
+[09:47:09] [Thread-8/INFO]: [RaspberryJuice] Starting output thread!
+[09:47:09] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[09:47:21] [Async Chat Thread - #0/INFO]: <Murzik> dkfgjldsfg[m
+[09:47:35] [Async Chat Thread - #0/INFO]: <Murzik> cube:3,3,3,17[m
+[09:48:19] [Thread-7/WARN]: java.net.SocketException: Connection reset
+[09:48:19] [Thread-7/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[09:48:19] [Thread-7/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[09:48:19] [Thread-7/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[09:48:19] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50018.
+[09:50:35] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50033.
+[09:50:35] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
+[09:50:35] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
+[09:50:42] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50033.
+[09:51:29] [Server thread/INFO]: Set the time to 1000
+[09:51:38] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50046.
+[09:51:38] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
+[09:51:38] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
+[09:51:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50046.
+[09:57:57] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50057.
+[09:57:57] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
+[09:57:57] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
+[09:57:57] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[09:57:57] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50057.
+[09:59:01] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50058.
+[09:59:01] [Thread-15/INFO]: [RaspberryJuice] Starting input thread
+[09:59:01] [Thread-16/INFO]: [RaspberryJuice] Starting output thread!
+[09:59:01] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[09:59:01] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50058.
+[10:00:23] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50059.
+[10:00:23] [Thread-17/INFO]: [RaspberryJuice] Starting input thread
+[10:00:23] [Thread-18/INFO]: [RaspberryJuice] Starting output thread!
+[10:00:23] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:00:23] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50059.
+[10:03:18] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50063.
+[10:03:18] [Thread-19/INFO]: [RaspberryJuice] Starting input thread
+[10:03:18] [Thread-20/INFO]: [RaspberryJuice] Starting output thread!
+[10:03:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50063.
+[10:04:13] [Server thread/INFO]: Set the time to 1000
+[10:04:20] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50072.
+[10:04:20] [Thread-21/INFO]: [RaspberryJuice] Starting input thread
+[10:04:20] [Thread-22/INFO]: [RaspberryJuice] Starting output thread!
+[10:04:20] [Thread-23/INFO]: [RaspberryJuice] Starting input thread
+[10:04:20] [Thread-24/INFO]: [RaspberryJuice] Starting output thread!
+[10:04:20] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50073.
+[10:04:20] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:04:20] [Thread-23/WARN]: java.net.SocketException: Connection reset
+[10:04:20] [Thread-23/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:04:20] [Thread-23/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:04:20] [Thread-23/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:04:20] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50072.
+[10:04:20] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50073.
+[10:04:28] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50074.
+[10:04:28] [Thread-25/INFO]: [RaspberryJuice] Starting input thread
+[10:04:28] [Thread-26/INFO]: [RaspberryJuice] Starting output thread!
+[10:04:28] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50075.
+[10:04:28] [Thread-27/INFO]: [RaspberryJuice] Starting input thread
+[10:04:28] [Thread-28/INFO]: [RaspberryJuice] Starting output thread!
+[10:04:28] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:04:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50074.
+[10:04:28] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50075.
+[10:06:15] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50077.
+[10:06:15] [Thread-30/INFO]: [RaspberryJuice] Starting output thread!
+[10:06:15] [Thread-29/INFO]: [RaspberryJuice] Starting input thread
+[10:06:15] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50078.
+[10:06:15] [Thread-31/INFO]: [RaspberryJuice] Starting input thread
+[10:06:15] [Thread-32/INFO]: [RaspberryJuice] Starting output thread!
+[10:06:15] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:06:15] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50077.
+[10:06:15] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50078.
+[10:07:55] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50079.
+[10:07:55] [Thread-34/INFO]: [RaspberryJuice] Starting output thread!
+[10:07:55] [Thread-33/INFO]: [RaspberryJuice] Starting input thread
+[10:07:55] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50079.
+[10:09:12] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50080.
+[10:09:12] [Thread-35/INFO]: [RaspberryJuice] Starting input thread
+[10:09:12] [Thread-36/INFO]: [RaspberryJuice] Starting output thread!
+[10:09:12] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50081.
+[10:09:12] [Thread-38/INFO]: [RaspberryJuice] Starting output thread!
+[10:09:12] [Thread-37/INFO]: [RaspberryJuice] Starting input thread
+[10:09:12] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50082.
+[10:09:12] [Thread-40/INFO]: [RaspberryJuice] Starting output thread!
+[10:09:12] [Thread-39/INFO]: [RaspberryJuice] Starting input thread
+[10:09:12] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:09:12] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:09:12] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50080.
+[10:09:12] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50081.
+[10:09:12] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50082.
+[10:09:33] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50083.
+[10:09:33] [Thread-41/INFO]: [RaspberryJuice] Starting input thread
+[10:09:33] [Thread-42/INFO]: [RaspberryJuice] Starting output thread!
+[10:09:33] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50084.
+[10:09:33] [Thread-43/INFO]: [RaspberryJuice] Starting input thread
+[10:09:33] [Thread-44/INFO]: [RaspberryJuice] Starting output thread!
+[10:09:33] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:09:33] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50083.
+[10:09:33] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50084.
+[10:13:30] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50109.
+[10:13:30] [Thread-45/INFO]: [RaspberryJuice] Starting input thread
+[10:13:30] [Thread-46/INFO]: [RaspberryJuice] Starting output thread!
+[10:13:30] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50110.
+[10:13:30] [Thread-47/INFO]: [RaspberryJuice] Starting input thread
+[10:13:30] [Thread-48/INFO]: [RaspberryJuice] Starting output thread!
+[10:13:30] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:13:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50109.
+[10:13:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50110.
+[10:14:41] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50114.
+[10:14:41] [Thread-49/INFO]: [RaspberryJuice] Starting input thread
+[10:14:41] [Thread-50/INFO]: [RaspberryJuice] Starting output thread!
+[10:14:41] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50115.
+[10:14:41] [Thread-52/INFO]: [RaspberryJuice] Starting output thread!
+[10:14:41] [Thread-51/INFO]: [RaspberryJuice] Starting input thread
+[10:14:41] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50116.
+[10:14:41] [Thread-53/INFO]: [RaspberryJuice] Starting input thread
+[10:14:41] [Thread-54/INFO]: [RaspberryJuice] Starting output thread!
+[10:14:41] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:14:41] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:14:41] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50114.
+[10:14:41] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50115.
+[10:14:41] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50116.
+[10:15:14] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50117.
+[10:15:14] [Thread-56/INFO]: [RaspberryJuice] Starting output thread!
+[10:15:14] [Thread-55/INFO]: [RaspberryJuice] Starting input thread
+[10:15:14] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50118.
+[10:15:14] [Thread-58/INFO]: [RaspberryJuice] Starting output thread!
+[10:15:14] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50119.
+[10:15:14] [Thread-57/INFO]: [RaspberryJuice] Starting input thread
+[10:15:14] [Thread-59/INFO]: [RaspberryJuice] Starting input thread
+[10:15:14] [Thread-60/INFO]: [RaspberryJuice] Starting output thread!
+[10:15:14] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:15:14] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:15:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50117.
+[10:15:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50118.
+[10:15:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50119.
+[10:16:18] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50121.
+[10:16:18] [Thread-62/INFO]: [RaspberryJuice] Starting output thread!
+[10:16:18] [Thread-61/INFO]: [RaspberryJuice] Starting input thread
+[10:16:18] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50122.
+[10:16:18] [Thread-63/INFO]: [RaspberryJuice] Starting input thread
+[10:16:18] [Thread-64/INFO]: [RaspberryJuice] Starting output thread!
+[10:16:18] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:16:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50121.
+[10:16:18] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50122.
+[10:18:41] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50140.
+[10:18:41] [Thread-65/INFO]: [RaspberryJuice] Starting input thread
+[10:18:41] [Thread-66/INFO]: [RaspberryJuice] Starting output thread!
+[10:18:41] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50141.
+[10:18:41] [Thread-67/INFO]: [RaspberryJuice] Starting input thread
+[10:18:41] [Thread-68/INFO]: [RaspberryJuice] Starting output thread!
+[10:18:41] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:18:41] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50140.
+[10:18:41] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50141.
+[10:29:14] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50156.
+[10:29:14] [Thread-69/INFO]: [RaspberryJuice] Starting input thread
+[10:29:14] [Thread-70/INFO]: [RaspberryJuice] Starting output thread!
+[10:29:14] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50157.
+[10:29:14] [Thread-72/INFO]: [RaspberryJuice] Starting output thread!
+[10:29:14] [Thread-71/INFO]: [RaspberryJuice] Starting input thread
+[10:29:14] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:29:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50156.
+[10:29:14] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50157.
+[10:31:33] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50164.
+[10:31:33] [Thread-73/INFO]: [RaspberryJuice] Starting input thread
+[10:31:33] [Thread-74/INFO]: [RaspberryJuice] Starting output thread!
+[10:31:34] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50165.
+[10:31:34] [Thread-75/INFO]: [RaspberryJuice] Starting input thread
+[10:31:34] [Thread-76/INFO]: [RaspberryJuice] Starting output thread!
+[10:31:34] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:31:34] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50164.
+[10:31:34] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50165.
+[10:33:48] [Server thread/INFO]: Murzik lost connection: Internal Exception: java.io.IOException: Удаленный хост принудительно разорвал существующее подключение
+[10:33:48] [Server thread/INFO]: Murzik left the game
+[10:35:03] [User Authenticator #2/INFO]: UUID of player Murzik is dbac2af4-434e-3444-9e3f-02299e764ca2
+[10:35:03] [Server thread/INFO]: Murzik[/127.0.0.1:50248] logged in with entity id 2030 at ([world]718.3696003728728, 80.0, -554.7781071025288)
+[10:35:09] [Server thread/INFO]: Set the time to 1000
+[10:35:22] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50255.
+[10:35:22] [Thread-78/INFO]: [RaspberryJuice] Starting output thread!
+[10:35:22] [Thread-77/INFO]: [RaspberryJuice] Starting input thread
+[10:35:22] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50256.
+[10:35:22] [Thread-79/INFO]: [RaspberryJuice] Starting input thread
+[10:35:22] [Thread-80/INFO]: [RaspberryJuice] Starting output thread!
+[10:35:22] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:35:22] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50255.
+[10:35:22] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50256.
+[10:36:30] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50260.
+[10:36:30] [Thread-81/INFO]: [RaspberryJuice] Starting input thread
+[10:36:30] [Thread-82/INFO]: [RaspberryJuice] Starting output thread!
+[10:36:30] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50261.
+[10:36:30] [Thread-83/INFO]: [RaspberryJuice] Starting input thread
+[10:36:30] [Thread-84/INFO]: [RaspberryJuice] Starting output thread!
+[10:36:30] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:36:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50260.
+[10:36:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50261.
+[10:37:50] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50262.
+[10:37:50] [Thread-86/INFO]: [RaspberryJuice] Starting output thread!
+[10:37:50] [Thread-85/INFO]: [RaspberryJuice] Starting input thread
+[10:37:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50262.
+[10:38:15] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50263.
+[10:38:15] [Thread-88/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:15] [Thread-87/INFO]: [RaspberryJuice] Starting input thread
+[10:38:18] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50264.
+[10:38:18] [Thread-90/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:18] [Thread-89/INFO]: [RaspberryJuice] Starting input thread
+[10:38:18] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:21] [Thread-89/WARN]: java.net.SocketException: Connection reset
+[10:38:21] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50265.
+[10:38:21] [Thread-89/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:21] [Thread-91/INFO]: [RaspberryJuice] Starting input thread
+[10:38:21] [Thread-89/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:21] [Thread-92/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:21] [Thread-89/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:21] [Thread-89/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:21] [Thread-89/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:21] [Thread-89/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:21] [Thread-89/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:21] [Thread-89/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:21] [Thread-89/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:21] [Thread-89/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:21] [Thread-89/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:21] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:21] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50264.
+[10:38:24] [Thread-91/WARN]: java.net.SocketException: Connection reset
+[10:38:24] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50270.
+[10:38:24] [Thread-91/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:24] [Thread-93/INFO]: [RaspberryJuice] Starting input thread
+[10:38:24] [Thread-94/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:24] [Thread-91/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:24] [Thread-91/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:24] [Thread-91/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:24] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:24] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50265.
+[10:38:27] [Thread-93/WARN]: java.net.SocketException: Connection reset
+[10:38:27] [Thread-93/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:27] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50271.
+[10:38:27] [Thread-93/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:27] [Thread-95/INFO]: [RaspberryJuice] Starting input thread
+[10:38:27] [Thread-93/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:27] [Thread-96/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:27] [Thread-93/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:27] [Thread-93/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:27] [Thread-93/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:27] [Thread-93/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:27] [Thread-93/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:27] [Thread-93/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:27] [Thread-93/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:27] [Thread-93/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:27] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:27] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50270.
+[10:38:30] [Thread-95/WARN]: java.net.SocketException: Connection reset
+[10:38:30] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50272.
+[10:38:30] [Thread-95/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:30] [Thread-97/INFO]: [RaspberryJuice] Starting input thread
+[10:38:30] [Thread-98/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:30] [Thread-95/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:30] [Thread-95/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:30] [Thread-95/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:30] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50271.
+[10:38:33] [Thread-97/WARN]: java.net.SocketException: Connection reset
+[10:38:33] [Thread-97/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:33] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50273.
+[10:38:33] [Thread-97/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:33] [Thread-97/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:33] [Thread-97/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:33] [Thread-97/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:33] [Thread-99/INFO]: [RaspberryJuice] Starting input thread
+[10:38:33] [Thread-100/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:33] [Thread-97/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:33] [Thread-97/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:33] [Thread-97/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:33] [Thread-97/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:33] [Thread-97/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:33] [Thread-97/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:33] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:33] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50272.
+[10:38:36] [Thread-99/WARN]: java.net.SocketException: Connection reset
+[10:38:36] [Thread-99/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:36] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50274.
+[10:38:36] [Thread-99/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:36] [Thread-99/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:36] [Thread-101/INFO]: [RaspberryJuice] Starting input thread
+[10:38:36] [Thread-99/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:36] [Thread-102/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:36] [Thread-99/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:36] [Thread-99/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:36] [Thread-99/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:36] [Thread-99/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:36] [Thread-99/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:36] [Thread-99/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:36] [Thread-99/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:36] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:36] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50273.
+[10:38:39] [Thread-101/WARN]: java.net.SocketException: Connection reset
+[10:38:39] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50275.
+[10:38:39] [Thread-101/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:39] [Thread-103/INFO]: [RaspberryJuice] Starting input thread
+[10:38:39] [Thread-104/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:39] [Thread-101/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:39] [Thread-101/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:39] [Thread-101/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:39] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:39] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50274.
+[10:38:42] [Thread-103/WARN]: java.net.SocketException: Connection reset
+[10:38:42] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50276.
+[10:38:42] [Thread-103/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:42] [Thread-103/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:42] [Thread-105/INFO]: [RaspberryJuice] Starting input thread
+[10:38:42] [Thread-103/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:42] [Thread-106/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:42] [Thread-103/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:42] [Thread-103/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:42] [Thread-103/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:42] [Thread-103/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:42] [Thread-103/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:42] [Thread-103/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:42] [Thread-103/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:42] [Thread-103/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:42] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:42] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50275.
+[10:38:45] [Thread-105/WARN]: java.net.SocketException: Connection reset
+[10:38:45] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50277.
+[10:38:45] [Thread-105/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:45] [Thread-105/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:45] [Thread-105/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:45] [Thread-108/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:45] [Thread-107/INFO]: [RaspberryJuice] Starting input thread
+[10:38:45] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:45] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50276.
+[10:38:48] [Thread-107/WARN]: java.net.SocketException: Connection reset
+[10:38:48] [Thread-107/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:48] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50278.
+[10:38:48] [Thread-107/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:48] [Thread-107/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:48] [Thread-107/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:48] [Thread-109/INFO]: [RaspberryJuice] Starting input thread
+[10:38:48] [Thread-107/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:48] [Thread-107/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:48] [Thread-107/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:48] [Thread-107/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:48] [Thread-107/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:48] [Thread-110/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:48] [Thread-107/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:48] [Thread-107/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:48] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:48] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50277.
+[10:38:51] [Thread-109/WARN]: java.net.SocketException: Connection reset
+[10:38:51] [Thread-109/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:51] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50279.
+[10:38:51] [Thread-109/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:38:51] [Thread-109/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:38:51] [Thread-109/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:38:51] [Thread-109/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:38:51] [Thread-111/INFO]: [RaspberryJuice] Starting input thread
+[10:38:51] [Thread-109/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:38:51] [Thread-109/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:38:51] [Thread-112/INFO]: [RaspberryJuice] Starting output thread!
+[10:38:51] [Thread-109/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:51] [Thread-109/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:38:51] [Thread-109/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:38:51] [Thread-109/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:38:51] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:38:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50263.
+[10:38:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50278.
+[10:38:51] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50279.
+[10:40:03] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50284.
+[10:40:03] [Thread-113/INFO]: [RaspberryJuice] Starting input thread
+[10:40:03] [Thread-114/INFO]: [RaspberryJuice] Starting output thread!
+[10:40:03] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50284.
+[10:41:25] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50303.
+[10:41:25] [Thread-116/INFO]: [RaspberryJuice] Starting output thread!
+[10:41:25] [Thread-115/INFO]: [RaspberryJuice] Starting input thread
+[10:41:25] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50304.
+[10:41:25] [Thread-117/INFO]: [RaspberryJuice] Starting input thread
+[10:41:25] [Thread-118/INFO]: [RaspberryJuice] Starting output thread!
+[10:41:25] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:41:30] [Thread-117/WARN]: java.net.SocketException: Connection reset
+[10:41:30] [Thread-117/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:41:30] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50306.
+[10:41:30] [Thread-117/WARN]: 	at java.net.SocketInputStream.read(Unknown Source)
+[10:41:30] [Thread-117/WARN]: 	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+[10:41:30] [Thread-117/WARN]: 	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+[10:41:30] [Thread-117/WARN]: 	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+[10:41:30] [Thread-119/INFO]: [RaspberryJuice] Starting input thread
+[10:41:30] [Thread-120/INFO]: [RaspberryJuice] Starting output thread!
+[10:41:30] [Thread-117/WARN]: 	at java.io.InputStreamReader.read(Unknown Source)
+[10:41:30] [Thread-117/WARN]: 	at java.io.BufferedReader.fill(Unknown Source)
+[10:41:30] [Thread-117/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:41:30] [Thread-117/WARN]: 	at java.io.BufferedReader.readLine(Unknown Source)
+[10:41:30] [Thread-117/WARN]: 	at net.zhuoweizhang.raspberryjuice.RemoteSession$InputThread.run(RemoteSession.java:577)
+[10:41:30] [Thread-117/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[10:41:30] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:41:30] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.restore is not supported.
+[10:41:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50303.
+[10:41:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50304.
+[10:41:30] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50306.
+[10:44:00] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50315.
+[10:44:00] [Thread-122/INFO]: [RaspberryJuice] Starting output thread!
+[10:44:00] [Thread-121/INFO]: [RaspberryJuice] Starting input thread
+[10:44:00] [Thread-6/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:50316.
+[10:44:00] [Thread-124/INFO]: [RaspberryJuice] Starting output thread!
+[10:44:00] [Thread-123/INFO]: [RaspberryJuice] Starting input thread
+[10:44:00] [Server thread/WARN]: [RaspberryJuice] world.checkpoint.save is not supported.
+[10:44:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50315.
+[10:44:00] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:50316.
