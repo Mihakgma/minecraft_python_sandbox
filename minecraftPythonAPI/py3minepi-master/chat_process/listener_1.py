@@ -20,10 +20,10 @@ class ChatListener(threading.Thread):
     MAIN_DELIMITER = ":"
     SECONDARY_DELIMITER = ","
 
-    def __init__(self, mc, figure_classes: list, sleep_time: float = 1.5):
+    def __init__(self, figure_classes: list, sleep_time: float = 1.5):
         threading.Thread.__init__(self)
         self.sleep_time = sleep_time
-        self.mc = MinecraftWorld(mc)
+        self.mc = MinecraftWorld()
         self.figure_classes = figure_classes
 
     def get_commands(self):
@@ -74,7 +74,6 @@ class ChatListener(threading.Thread):
                     invoker = Invoker(self.mc, func)
                     invoker()
 
-
     def build_figure(self, figure_class, *args):
         # pos = self.mc.player.getTilePos()
         print(figure_class)
@@ -85,7 +84,7 @@ class ChatListener(threading.Thread):
         x_t = x_t[1:]
         print(x_t, y_t, z_t, block_id)
         try:
-            figure = figure_class(0, 0, 0, int(block_id), True, self.mc)
+            figure = figure_class(0, 0, 0, int(block_id), True)
             try:
                 figure.draw_filled_fig(int(x_t), int(y_t), int(z_t))
             except ValueError as e:
@@ -109,7 +108,7 @@ if __name__ == "__main__":
                        Rectangle,
                        DoublePyramid,
                        SpiraledStairwayTower]
-    listener = ChatListener(m_craft, figures_classes, sleep_time=1.5)
+    listener = ChatListener(figures_classes, sleep_time=1.5)
     listener.start()
 
     # main cycle while listener working
