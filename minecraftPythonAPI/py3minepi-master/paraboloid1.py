@@ -1,7 +1,7 @@
-
 import mcpi.minecraft as minecraft
 import mcpi.block as block
 import math
+
 
 craft=minecraft.Minecraft.create()
 cor=craft.player.getTilePos()
@@ -23,11 +23,3 @@ dub=cor.clone()
 for k in range(360):
     cor.y=dub.y
     par(dub.x, dub.z, 80, 0.5)
-
-
-    
-    
-
-    
-         
-         

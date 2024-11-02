@@ -1,6 +1,8 @@
 import socket
 import select
 import sys
+
+from patterns.singleton import Singleton
 from .util import flatten_parameters_to_bytestring
 
 """ @author: Aron Nieminen, Mojang AB"""
@@ -8,7 +10,8 @@ from .util import flatten_parameters_to_bytestring
 class RequestError(Exception):
     pass
 
-class Connection:
+
+class Connection(Singleton):
     """Connection to a Minecraft Pi game"""
     RequestFailed = "Fail"
 

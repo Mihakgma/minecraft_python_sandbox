@@ -1,12 +1,10 @@
-from numpy.random import randint
-
-from cube_fig import Cube
+from figures.cube_fig import Cube
 # from figure_parent_class import Figure
 import mcpi.minecraft as minecraft
 
 from time import sleep as time_sleep
 
-from pyramid_fig import Pyramid
+from figures.pyramid_fig import Pyramid
 
 if __name__ == "__main__":
     mc = minecraft.Minecraft.create()
