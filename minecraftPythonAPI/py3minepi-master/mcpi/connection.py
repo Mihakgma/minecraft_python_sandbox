@@ -2,8 +2,9 @@ import socket
 import select
 import sys
 
-from patterns.singleton import Singleton
+# from patterns.singleton import Singleton
 from .util import flatten_parameters_to_bytestring
+from time import sleep as time_sleep
 
 """ @author: Aron Nieminen, Mojang AB"""
 
@@ -63,4 +64,11 @@ class Connection:
     def sendReceive(self, *data):
         """Sends and receive data"""
         self.send(*data)
-        return self.receive()
+        tries = 5
+        while tries:
+            try:
+                tries -= 1
+                return self.receive()
+            except RequestError as e:
+                print(e, f"try number = {tries}")
+                time_sleep(0.1)

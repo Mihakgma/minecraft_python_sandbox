@@ -1,4 +1,4 @@
-from patterns.singleton import Singleton
+# from patterns.singleton import Singleton
 from .connection import Connection
 from .vec3 import Vec3
 from .event import BlockEvent, ChatEvent, ProjectileEvent
@@ -298,7 +298,7 @@ class CmdEvents:
         return results
 
 
-class Minecraft(Singleton):
+class Minecraft:
 # class Minecraft:
     """The main class to interact with a running instance of Minecraft Pi."""
 

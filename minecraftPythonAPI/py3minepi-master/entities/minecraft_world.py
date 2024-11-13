@@ -1,9 +1,9 @@
 # from mcpi import minecraft
 from mcpi.minecraft import Minecraft
-from patterns.singleton import Singleton
+# from patterns.singleton import Singleton
 
 
-class MinecraftWorld(Singleton):
+class MinecraftWorld:
 # class MinecraftWorld:
 
     def __init__(self):

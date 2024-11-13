@@ -12,10 +12,11 @@ from figures.double_pyramid_fig import DoublePyramid
 from figures.pyramid_fig import Pyramid
 from figures.rectangle_fig import Rectangle
 from patterns.function_invoker import Invoker
+from patterns.singleton import Singleton
 from tower_chatgpt_1 import SpiraledStairwayTower
 
 
-class ChatListener(threading.Thread):
+class ChatListener(threading.Thread, Singleton):
     __COMMANDS__ = commands
     MAIN_DELIMITER = ":"
     SECONDARY_DELIMITER = ","
@@ -30,17 +31,21 @@ class ChatListener(threading.Thread):
         return self.__COMMANDS__
 
     def run(self):
+        lock = threading.RLock()
         # players_ids = self.mc.getPlayerEntityIds()
         while True:
-            time_sleep(self.sleep_time)  # check chat every ... seconds
-            try:
-                chat = self.mc.get_world().events.pollChatPosts()
-                if chat:
-                    for post in chat:
-                        print(post)
-                        self.process_chat(post.message)
-            except AttributeError as e:
-                print(e)
+            with lock:
+                lock.acquire()
+                time_sleep(self.sleep_time)  # check chat every ... seconds
+                try:
+                    chat = self.mc.get_world().events.pollChatPosts()
+                    if chat:
+                        for post in chat:
+                            print(post)
+                            self.process_chat(post.message)
+                except AttributeError as e:
+                    print(e)
+                lock.release()
 
     def process_chat(self, message):
         chat_commands = self.get_commands()
@@ -80,7 +85,11 @@ class ChatListener(threading.Thread):
         print(*args)
         message = args[0]
         vals_start_position = message.find(self.MAIN_DELIMITER)
-        x_t, y_t, z_t, block_id = message[vals_start_position:].split(self.SECONDARY_DELIMITER)
+        try:
+            x_t, y_t, z_t, block_id = message[vals_start_position:].split(self.SECONDARY_DELIMITER)
+        except ValueError as e:
+            print(e)
+            return
         x_t = x_t[1:]
         print(x_t, y_t, z_t, block_id)
         try:
