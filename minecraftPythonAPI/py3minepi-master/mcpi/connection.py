@@ -1,16 +1,12 @@
 import socket
 import select
 import sys
-
-# from patterns.singleton import Singleton
-from .util import flatten_parameters_to_bytestring
-from time import sleep as time_sleep
+from mcpi.util import flatten_parameters_to_bytestring
 
 """ @author: Aron Nieminen, Mojang AB"""
 
 class RequestError(Exception):
     pass
-
 
 class Connection:
     """Connection to a Minecraft Pi game"""
@@ -41,7 +37,6 @@ class Connection:
         """
 
         s = b"".join([f, b"(", flatten_parameters_to_bytestring(data), b")", b"\n"])
-
         self._send(s)
 
     def _send(self, s):
@@ -56,16 +51,9 @@ class Connection:
 
     def receive(self):
         """Receives data. Note that the trailing newline '\n' is trimmed"""
-        # tries = 5
-        # while tries:
-        #     tries -= 1
-        #     try:
         s = self.socket.makefile("r").readline().rstrip("\n")
         if s == Connection.RequestFailed:
-            raise RequestError("%s failed" % self.lastSent.strip())
-            # except RequestError as e:
-            #     print(e, f"try number = {tries}")
-            #     time_sleep(0.1)
+            raise RequestError("%s failed"%self.lastSent.strip())
         return s
 
     def sendReceive(self, *data):

@@ -23,7 +23,7 @@ class ChatListener(threading.Thread):
 
     def __init__(self, figure_classes: list,
                  mc: MinecraftWorld,
-                 sleep_time: float = 1.5):
+                 sleep_time: float = 3.5):
         threading.Thread.__init__(self)
         self.sleep_time = sleep_time
         self.mc = mc
@@ -41,6 +41,7 @@ class ChatListener(threading.Thread):
             time_sleep(self.sleep_time)  # check chat every ... seconds
             try:
                 chat = self.mc.get_world().events.pollChatPosts()
+                print(self.mc.get_world().events)
                 print(chat)
                 if chat:
                     for post in chat:
@@ -113,7 +114,8 @@ class ChatListener(threading.Thread):
 if __name__ == "__main__":
     start_TS = get_current_time()
     # clear all previous events
-    # m_craft = minecraft.Minecraft.create()
+    m_craft = minecraft.Minecraft.create()
+    mc_1 = MinecraftWorld()
     # cmde = minecraft.CmdEvents(connection=mc.getConnection())
     # cmde.clearAll()
 
@@ -125,7 +127,9 @@ if __name__ == "__main__":
                        Rectangle,
                        DoublePyramid,
                        SpiraledStairwayTower]
-    listener = ChatListener(figures_classes, sleep_time=1.5, mc=MinecraftWorld())
+    listener = ChatListener(figures_classes,
+                            sleep_time=0.5,
+                            mc=MinecraftWorld())
     listener.start()
 
     # main cycle while listener working

@@ -1,11 +1,11 @@
 # from patterns.singleton import Singleton
-from .connection import Connection
-from .vec3 import Vec3
-from .event import BlockEvent, ChatEvent, ProjectileEvent
-from .entity import Entity
-from .block import Block
+from mcpi.connection import Connection
+from mcpi.vec3 import Vec3
+from mcpi.event import BlockEvent, ChatEvent, ProjectileEvent
+from mcpi.entity import Entity
+from mcpi.block import Block
 import math
-from .util import flatten
+from mcpi.util import flatten
 
 """ Minecraft PI low level api v0.1_1
 
@@ -35,8 +35,6 @@ from .util import flatten
 
 
 def intFloor(*args):
-    # if any([type(x) == tuple for x in flatten(args)]):
-    #     return [int(math.floor(x)) for x in flatten(args[0])]
     return [int(math.floor(x)) for x in flatten(args)]
 
 
@@ -213,9 +211,7 @@ class CmdPlayer(CmdPositioner):
         """Triggered by posts to chat => [ChatEvent]"""
         s = self.conn.sendReceive(b"player.events.chat.posts")
         events = [e for e in s.split("|") if e]
-        posts = [ChatEvent.Post(int(e[:e.find(",")]), e[e.find(",") + 1:]) for e in events]
-        print(posts, sep="\n")
-        return posts
+        return [ChatEvent.Post(int(e[:e.find(",")]), e[e.find(",") + 1:]) for e in events]
 
     def pollProjectileHits(self):
         """Only triggered by projectiles => [BlockEvent]"""
@@ -299,7 +295,6 @@ class CmdEvents:
 
 
 class Minecraft:
-# class Minecraft:
     """The main class to interact with a running instance of Minecraft Pi."""
 
     def __init__(self, connection):
@@ -330,7 +325,6 @@ class Minecraft:
 
     def setBlocks(self, *args):
         """Set a cuboid of blocks (x0,y0,z0,x1,y1,z1,id,[data])"""
-        # print(*args)
         self.conn.send(b"world.setBlocks", intFloor(args))
 
     def setSign(self, *args):
