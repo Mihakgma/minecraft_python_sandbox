@@ -33,7 +33,7 @@ class ChatListener(threading.Thread):
         return self.__COMMANDS__
 
     def run(self):
-        lock = threading.RLock()
+        # lock = threading.RLock()
         # players_ids = self.mc.getPlayerEntityIds()
         while True:
             # with lock:
@@ -41,6 +41,7 @@ class ChatListener(threading.Thread):
             time_sleep(self.sleep_time)  # check chat every ... seconds
             try:
                 chat = self.mc.get_world().events.pollChatPosts()
+                print(chat)
                 if chat:
                     for post in chat:
                         print(post)
@@ -82,7 +83,7 @@ class ChatListener(threading.Thread):
                     invoker()
 
     def build_figure(self, figure_class, *args):
-        # pos = self.mc.player.getTilePos()
+        pos = self.mc.get_tile_pos()
         print(figure_class)
         print(*args)
         message = args[0]
@@ -100,14 +101,19 @@ class ChatListener(threading.Thread):
                 figure.draw_filled_fig(int(x_t), int(y_t), int(z_t))
             except ValueError as e:
                 print(f"Error trying to build figure: {e}")
-        except TypeError as e:
-            print(f"Error trying to init figures class new object: {e}")
+            except BaseException as be:
+                print(f"Error trying to build figure: {be}")
+                figure_1 = figure_class(pos.x, pos.y, pos.z,
+                                        int(block_id), False)
+                figure_1.draw_filled_fig(int(x_t), int(y_t), int(z_t))
+        except TypeError as te:
+            print(f"Error trying to init figures class new object: {te}")
 
 
 if __name__ == "__main__":
     start_TS = get_current_time()
     # clear all previous events
-    m_craft = minecraft.Minecraft.create()
+    # m_craft = minecraft.Minecraft.create()
     # cmde = minecraft.CmdEvents(connection=mc.getConnection())
     # cmde.clearAll()
 
