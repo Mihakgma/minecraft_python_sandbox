@@ -118,6 +118,6 @@ if __name__ == "__main__":
     print(cor)
     # Пример использования:
     tower = SpiraledStairwayTower(x=cor.x, y=cor.y, z=cor.z)
-    tower.draw_filled_fig(100, 500, 100) # Строит башню ...х...х... блоков
+    tower.draw_filled_fig(100, 500, 100)  # Строит башню ...х...х... блоков
     time.sleep(10)
     craft_obj.restore_start_state()
