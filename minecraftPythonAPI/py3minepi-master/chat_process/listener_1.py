@@ -4,7 +4,7 @@ from time import sleep as time_sleep
 import threading
 import sys
 
-from common_comands import commands
+from common_comands import commands, stop_commands
 from datetime_current import get_current_time
 from entities.minecraft_world import MinecraftWorld
 from figures.cube_fig import Cube
@@ -18,6 +18,7 @@ from tower_chatgpt_1 import SpiraledStairwayTower
 
 class ChatListener(threading.Thread):
     __COMMANDS__ = commands
+    __STOP_COMMANDS = stop_commands
     MAIN_DELIMITER = ":"
     SECONDARY_DELIMITER = ","
 
@@ -35,7 +36,8 @@ class ChatListener(threading.Thread):
     def run(self):
         # lock = threading.RLock()
         # players_ids = self.mc.getPlayerEntityIds()
-        while True:
+        mess = ""
+        while mess.lower().strip() not in self.__STOP_COMMANDS:
             # with lock:
             # lock.acquire()
             time_sleep(self.sleep_time)  # check chat every ... seconds
@@ -45,9 +47,12 @@ class ChatListener(threading.Thread):
                     for post in chat:
                         print(post)
                         self.process_chat(post.message)
+                        mess = post.message
             except AttributeError as e:
                 print(e)
                 # lock.release()
+        else:
+            print("Здесь мы будем приводить мир в исходное состояние!")
 
     def process_chat(self, message):
         chat_commands = self.get_commands()
@@ -136,6 +141,8 @@ if __name__ == "__main__":
     try:
         while minutes_elapsed < minutes_to_finish:
             time_sleep(60)
+            mc = MinecraftWorld()
+            print(f"Class MinecraftWorld instance have been created <{mc.get_tries_created()}> times already.")
             minutes_elapsed += 1
             print(f"Tik-tok, <{minutes_elapsed}> minutes elapsed...")
             print(f"<{minutes_to_finish - minutes_elapsed}> minutes to finish...")
