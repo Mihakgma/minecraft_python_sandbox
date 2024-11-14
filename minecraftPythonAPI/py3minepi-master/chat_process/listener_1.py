@@ -141,6 +141,7 @@ if __name__ == "__main__":
     minutes_elapsed = 0
     minutes_to_finish = 60
     try:
+        # the second condition doesn't work at all...
         while (minutes_elapsed < minutes_to_finish
                and mcw.get_world()):
             time_sleep(60)
