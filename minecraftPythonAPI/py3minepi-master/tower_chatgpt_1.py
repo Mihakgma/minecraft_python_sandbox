@@ -1,5 +1,10 @@
+import time
+
 import mcpi.minecraft as minecraft
 import math
+
+from entities.minecraft_world import MinecraftWorld
+
 
 class SpiraledStairwayTower():
     def __init__(self, x, y, z, block_id=35, block_data=3, radius=5, height=20, steps_per_turn=5):
@@ -106,10 +111,13 @@ class SpiraledStairwayTower():
                 craft.setBlock(x_coord, y_coord, z_coord, block_id, block_data)
 
 
-
 if __name__ == "__main__":
     mc = minecraft.Minecraft.create()
-    cor = mc.player.getTilePos()
+    craft_obj = MinecraftWorld(mc)
+    cor = craft_obj.get_tile_pos()
+    print(cor)
     # Пример использования:
     tower = SpiraledStairwayTower(x=cor.x, y=cor.y, z=cor.z)
     tower.draw_filled_fig(100, 500, 100) # Строит башню ...х...х... блоков
+    time.sleep(10)
+    craft_obj.restore_start_state()
