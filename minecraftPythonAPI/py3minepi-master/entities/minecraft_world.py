@@ -1,9 +1,8 @@
-# from mcpi import minecraft
 from mcpi.minecraft import Minecraft
 from patterns.singleton import Singleton
+from time import sleep as time_sleep
 
 
-# class MinecraftWorld:
 class MinecraftWorld(Singleton):
 
     def __init__(self, mcw=None):
@@ -15,13 +14,13 @@ class MinecraftWorld(Singleton):
             self.__mc_start_state = mcw.saveCheckpoint()
 
     def get_world(self):
-        self.remake_world()
+        # self.remake_world()
         world = self.__mc_obj
         print(world)
         return world
 
     def get_start_state(self):
-        self.remake_world()
+        # self.remake_world()
         return self.__mc_start_state
 
     def restore_start_state(self):
@@ -30,7 +29,7 @@ class MinecraftWorld(Singleton):
         mine_craft.restoreCheckpoint()
 
     def get_tile_pos(self):
-        self.remake_world()
+        # self.remake_world()
         mine_craft = self.__mc_obj
         print("Trying to get tile pos...")
         try:
@@ -45,15 +44,23 @@ class MinecraftWorld(Singleton):
         new_mcw = Minecraft.create()
         self.__mc_obj = new_mcw
 
+    def get_chat(self):
+        mine_craft = self.__mc_obj
+        my_chat = mine_craft.events.pollChatPosts()
+        return my_chat
+
 
 if __name__ == "__main__":
     print("testing work of singleton pattern...")
     mc = Minecraft.create()
-    # mc_obj_1 = MinecraftWorld(mcw=mc)
-    # mc_obj_2 = MinecraftWorld()
+    mc_obj_1 = MinecraftWorld(mcw=mc)
+    # mc_new = mc_obj_1.get_world()
 
-    pos = mc.player.getTilePos()
-    print(pos)
-
-    # print(mc_obj_1 == mc_obj_2)
-    # print(mc_obj_1.get_world() == mc_obj_2.get_world() == mc)
+    # pos = mc_new.player.getTilePos()
+    # pos = mc.player.getTilePos()
+    # print(pos)
+    for i in range(10):
+        time_sleep(3)
+        chat = mc_obj_1.get_chat()
+        for post in chat:
+            print(post.message)

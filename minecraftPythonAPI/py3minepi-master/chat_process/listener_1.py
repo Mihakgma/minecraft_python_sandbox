@@ -40,9 +40,7 @@ class ChatListener(threading.Thread):
             # lock.acquire()
             time_sleep(self.sleep_time)  # check chat every ... seconds
             try:
-                chat = self.mc.get_world().events.pollChatPosts()
-                print(self.mc.get_world().events)
-                print(chat)
+                chat = self.mc.get_chat()
                 if chat:
                     for post in chat:
                         print(post)
@@ -115,7 +113,7 @@ if __name__ == "__main__":
     start_TS = get_current_time()
     # clear all previous events
     m_craft = minecraft.Minecraft.create()
-    mc_1 = MinecraftWorld()
+    mc_1 = MinecraftWorld(m_craft)
     # cmde = minecraft.CmdEvents(connection=mc.getConnection())
     # cmde.clearAll()
 
