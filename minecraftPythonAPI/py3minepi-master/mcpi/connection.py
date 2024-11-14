@@ -56,19 +56,19 @@ class Connection:
 
     def receive(self):
         """Receives data. Note that the trailing newline '\n' is trimmed"""
+        # tries = 5
+        # while tries:
+        #     tries -= 1
+        #     try:
         s = self.socket.makefile("r").readline().rstrip("\n")
         if s == Connection.RequestFailed:
-            raise RequestError("%s failed"%self.lastSent.strip())
+            raise RequestError("%s failed" % self.lastSent.strip())
+            # except RequestError as e:
+            #     print(e, f"try number = {tries}")
+            #     time_sleep(0.1)
         return s
 
     def sendReceive(self, *data):
         """Sends and receive data"""
         self.send(*data)
-        tries = 5
-        while tries:
-            try:
-                tries -= 1
-                return self.receive()
-            except RequestError as e:
-                print(e, f"try number = {tries}")
-                time_sleep(0.1)
+        return self.receive()

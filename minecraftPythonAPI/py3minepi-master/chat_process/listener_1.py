@@ -12,19 +12,21 @@ from figures.double_pyramid_fig import DoublePyramid
 from figures.pyramid_fig import Pyramid
 from figures.rectangle_fig import Rectangle
 from patterns.function_invoker import Invoker
-from patterns.singleton import Singleton
+# from patterns.singleton import Singleton
 from tower_chatgpt_1 import SpiraledStairwayTower
 
 
-class ChatListener(threading.Thread, Singleton):
+class ChatListener(threading.Thread):
     __COMMANDS__ = commands
     MAIN_DELIMITER = ":"
     SECONDARY_DELIMITER = ","
 
-    def __init__(self, figure_classes: list, sleep_time: float = 1.5):
+    def __init__(self, figure_classes: list,
+                 mc: MinecraftWorld,
+                 sleep_time: float = 1.5):
         threading.Thread.__init__(self)
         self.sleep_time = sleep_time
-        self.mc = MinecraftWorld()
+        self.mc = mc
         self.figure_classes = figure_classes
 
     def get_commands(self):
@@ -34,18 +36,18 @@ class ChatListener(threading.Thread, Singleton):
         lock = threading.RLock()
         # players_ids = self.mc.getPlayerEntityIds()
         while True:
-            with lock:
-                lock.acquire()
-                time_sleep(self.sleep_time)  # check chat every ... seconds
-                try:
-                    chat = self.mc.get_world().events.pollChatPosts()
-                    if chat:
-                        for post in chat:
-                            print(post)
-                            self.process_chat(post.message)
-                except AttributeError as e:
-                    print(e)
-                lock.release()
+            # with lock:
+            # lock.acquire()
+            time_sleep(self.sleep_time)  # check chat every ... seconds
+            try:
+                chat = self.mc.get_world().events.pollChatPosts()
+                if chat:
+                    for post in chat:
+                        print(post)
+                        self.process_chat(post.message)
+            except AttributeError as e:
+                print(e)
+                # lock.release()
 
     def process_chat(self, message):
         chat_commands = self.get_commands()
@@ -117,7 +119,7 @@ if __name__ == "__main__":
                        Rectangle,
                        DoublePyramid,
                        SpiraledStairwayTower]
-    listener = ChatListener(figures_classes, sleep_time=1.5)
+    listener = ChatListener(figures_classes, sleep_time=1.5, mc=MinecraftWorld())
     listener.start()
 
     # main cycle while listener working

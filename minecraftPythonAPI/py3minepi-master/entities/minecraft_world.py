@@ -4,7 +4,7 @@ from mcpi.minecraft import Minecraft
 
 
 class MinecraftWorld:
-# class MinecraftWorld:
+# class MinecraftWorld(Singleton):
 
     def __init__(self):
         # mine_craft = Minecraft.create(address="127.0.0.1", port=54199)
@@ -15,6 +15,7 @@ class MinecraftWorld:
         self.__mc_start_state = mine_craft.saveCheckpoint()
 
     def get_world(self):
+        # return Minecraft.create()
         return self.__mc_obj
 
     def get_start_state(self):
@@ -22,11 +23,13 @@ class MinecraftWorld:
 
     def restore_start_state(self):
         print("trying to restore start state")
-        self.__mc_obj.restoreCheckpoint()
+        mine_craft = self.__mc_obj
+        mine_craft.restoreCheckpoint()
 
     def get_tile_pos(self):
-        pos = self.__mc_obj.player.getTilePos()
-        return pos
+        mine_craft = self.__mc_obj
+        position = mine_craft.player.getTilePos()
+        return position
 
 
 if __name__ == "__main__":
