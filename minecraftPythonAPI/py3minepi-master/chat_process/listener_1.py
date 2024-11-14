@@ -37,10 +37,7 @@ class ChatListener(threading.Thread):
         # lock = threading.RLock()
         # players_ids = self.mc.getPlayerEntityIds()
         mess = ""
-        while (mess.lower().strip() not in self.__STOP_COMMANDS
-               and self.mc.get_world()):
-            # with lock:
-            # lock.acquire()
+        while mess.lower().strip() not in self.__STOP_COMMANDS:
             time_sleep(self.sleep_time)  # check chat every ... seconds
             try:
                 chat = self.mc.get_chat()
@@ -51,9 +48,10 @@ class ChatListener(threading.Thread):
                         mess = post.message
             except AttributeError as e:
                 print(e)
-                # lock.release()
         else:
             print("Здесь мы будем приводить мир в исходное состояние!")
+            # doesn't work...
+            self.mc.restore_start_state()
 
     def process_chat(self, message):
         chat_commands = self.get_commands()
@@ -135,6 +133,7 @@ if __name__ == "__main__":
     listener = ChatListener(figures_classes,
                             sleep_time=0.5,
                             mc=mcw)
+
     listener.start()
 
     # main cycle while listener working
