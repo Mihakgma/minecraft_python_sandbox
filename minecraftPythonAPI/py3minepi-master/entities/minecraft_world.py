@@ -17,7 +17,8 @@ class MinecraftWorld(Singleton):
             pass
         elif self.__try_creates == 1:
             self.__mc_obj = mcw
-            self.__mc_start_state = mcw.saveCheckpoint()
+            # self.__mc_start_state = mcw.saveCheckpoint()
+            mcw.saveCheckpoint()
         else:
             pass
 
@@ -28,8 +29,8 @@ class MinecraftWorld(Singleton):
         """
         return self.__mc_obj
 
-    def get_start_state(self):
-        return self.__mc_start_state
+    # def get_start_state(self):
+    #     return self.__mc_start_state
 
     def restore_start_state(self):
         print("trying to restore start state")
@@ -43,7 +44,7 @@ class MinecraftWorld(Singleton):
             position = mine_craft.player.getTilePos()
             # print("Tile pos:", position)
             return position
-        except Exception as e:
+        except BaseException as e:
             print(f"Error getting tile pos: {e}")
             return None
 

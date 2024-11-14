@@ -37,7 +37,8 @@ class ChatListener(threading.Thread):
         # lock = threading.RLock()
         # players_ids = self.mc.getPlayerEntityIds()
         mess = ""
-        while mess.lower().strip() not in self.__STOP_COMMANDS:
+        while (mess.lower().strip() not in self.__STOP_COMMANDS
+               and self.mc.get_world()):
             # with lock:
             # lock.acquire()
             time_sleep(self.sleep_time)  # check chat every ... seconds
@@ -125,6 +126,7 @@ if __name__ == "__main__":
     sys.setrecursionlimit(1000)
 
     # starting listener
+    mcw = MinecraftWorld()
     figures_classes = [Cube,
                        Pyramid,
                        Rectangle,
@@ -132,14 +134,15 @@ if __name__ == "__main__":
                        SpiraledStairwayTower]
     listener = ChatListener(figures_classes,
                             sleep_time=0.5,
-                            mc=MinecraftWorld())
+                            mc=mcw)
     listener.start()
 
     # main cycle while listener working
     minutes_elapsed = 0
     minutes_to_finish = 60
     try:
-        while minutes_elapsed < minutes_to_finish:
+        while (minutes_elapsed < minutes_to_finish
+               and mcw.get_world()):
             time_sleep(60)
             mc = MinecraftWorld()
             print(f"Class MinecraftWorld instance have been created <{mc.get_tries_created()}> times already.")
