@@ -6,8 +6,13 @@ import math
 from entities.minecraft_world import MinecraftWorld
 
 
-class SpiraledStairwayTower():
-    def __init__(self, x, y, z, block_id=35, block_data=3, radius=5, height=20, steps_per_turn=5):
+class SpiraledStairwayTower:
+    def __init__(self, x, y, z,
+                 block_id=35,
+                 block_data=3,
+                 radius=5,
+                 height=20,
+                 steps_per_turn=5):
         """
         Инициализирует башню со спиральной лестницей.
 
